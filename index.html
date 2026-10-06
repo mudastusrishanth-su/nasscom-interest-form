@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NASSCOM College Interest | Blackbucks</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#172033}
+.container{max-width:760px;margin:0 auto;padding:24px 16px 40px}
+.card{background:#fff;border-radius:18px;box-shadow:0 8px 30px rgba(20,40,80,.10);overflow:hidden}
+.header{padding:28px 28px 22px;background:#0b2d5c;color:#fff}
+.brand{font-size:14px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;opacity:.9}
+h1{margin:8px 0 8px;font-size:28px;line-height:1.2}
+.subtitle{margin:0;line-height:1.5;opacity:.92}
+.form{padding:28px}.section-title{font-size:17px;font-weight:700;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:16px}.full{grid-column:1/-1}
+label{display:block;font-size:14px;font-weight:700;margin-bottom:7px}
+input,select,textarea{width:100%;padding:12px 13px;border:1px solid #ccd5e2;border-radius:9px;font-size:15px;outline:none;background:#fff}
+input:focus,select:focus,textarea:focus{border-color:#1d63b7;box-shadow:0 0 0 3px rgba(29,99,183,.10)}
+textarea{min-height:95px;resize:vertical}
+.options{display:flex;flex-wrap:wrap;gap:10px}
+.options label{font-weight:400;margin:0;border:1px solid #d5dce7;padding:10px 12px;border-radius:9px;cursor:pointer}
+.options input{width:auto;margin-right:7px}
+.consent{background:#f5f8fc;padding:13px;border-radius:9px;margin:8px 0 20px;font-size:13px;line-height:1.5}
+button{width:100%;border:0;border-radius:10px;background:#0b2d5c;color:#fff;font-size:16px;font-weight:700;padding:14px;cursor:pointer}
+button:hover{background:#123e78} button:disabled{opacity:.6;cursor:not-allowed}
+#status{display:none;margin-top:16px;padding:13px;border-radius:9px;font-size:14px;line-height:1.5}
+.success{background:#e9f8ef;color:#17633a}.error{background:#fff0f0;color:#9b2226}
+.note{text-align:center;color:#667085;font-size:12px;margin-top:16px}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.header{padding:24px 20px}.form{padding:22px}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <div class="brand">Blackbucks Group × NASSCOM</div>
+      <h1>College Interest Form</h1>
+      <p class="subtitle">Express your institution's interest in NASSCOM FutureSkills Prime and career-readiness initiatives powered by Blackbucks.</p>
+    </div>
+
+    <form class="form" id="interestForm">
+      <p class="section-title">College & Contact Details</p>
+      <div class="grid">
+        <div class="field">
+          <label for="name">Full Name *</label>
+          <input id="name" name="Full Name" required>
+        </div>
+        <div class="field">
+          <label for="designation">Designation *</label>
+          <select id="designation" name="Designation" required>
+            <option value="">Select designation</option>
+            <option>Principal</option><option>Vice Principal</option><option>Dean</option>
+            <option>Training & Placement Officer</option><option>HOD</option>
+            <option>Faculty Coordinator</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="college">College / Institution Name *</label>
+          <input id="college" name="College / Institution Name" required>
+        </div>
+        <div class="field">
+          <label for="city">City *</label>
+          <input id="city" name="City" required>
+        </div>
+        <div class="field">
+          <label for="state">State *</label>
+          <input id="state" name="State" required>
+        </div>
+        <div class="field">
+          <label for="email">Official Email ID *</label>
+          <input id="email" type="email" name="Official Email ID" required>
+        </div>
+        <div class="field">
+          <label for="mobile">Mobile Number *</label>
+          <input id="mobile" type="tel" name="Mobile Number" pattern="[0-9+() -]{10,}" required>
+        </div>
+        <div class="field full">
+          <label for="students">Approximate Number of Students *</label>
+          <input id="students" type="number" min="1" name="Approximate Number of Students" required>
+        </div>
+
+        <div class="field full">
+          <label>Preferred Engagement *</label>
+          <div class="options">
+            <label><input type="radio" name="Preferred Engagement" value="NASSCOM Career Readiness Session" required>NASSCOM Career Readiness Session</label>
+            <label><input type="radio" name="Preferred Engagement" value="NASSCOM FutureSkills Prime Awareness Session">FutureSkills Prime Awareness</label>
+            <label><input type="radio" name="Preferred Engagement" value="Student Registration / Enrollment Support">Student Registration / Enrollment Support</label>
+            <label><input type="radio" name="Preferred Engagement" value="Internship / Employability Program">Internship / Employability Program</label>
+            <label><input type="radio" name="Preferred Engagement" value="Other">Other</label>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label>Preferred Mode *</label>
+          <div class="options">
+            <label><input type="radio" name="Preferred Mode" value="Offline / On-Campus" required>Offline / On-Campus</label>
+            <label><input type="radio" name="Preferred Mode" value="Online">Online</label>
+            <label><input type="radio" name="Preferred Mode" value="Either">Either</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="timeline">Preferred Timeline</label>
+          <select id="timeline" name="Preferred Timeline">
+            <option value="">Select timeline</option>
+            <option>This Week</option><option>Within 2 Weeks</option>
+            <option>This Month</option><option>Next Month</option><option>To Be Discussed</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Additional Requirements / Message</label>
+          <textarea id="message" name="Additional Requirements / Message"></textarea>
+        </div>
+      </div>
+
+      <div class="consent">
+        <label style="font-weight:400">
+          <input type="checkbox" id="consent" name="Consent" value="Yes" required>
+          I confirm that I am authorized to submit this interest on behalf of the institution.
+        </label>
+      </div>
+
+      <button type="submit" id="submitBtn">Submit Interest</button>
+      <div id="status"></div>
+      <div class="note">Your details will be used by the Blackbucks team to contact your institution regarding the NASSCOM engagement.</div>
+    </form>
+  </div>
+</div>
+
+<script>
+// Replace this with your deployed Google Apps Script Web App URL.
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzZizYpIKjR3FR0_pzg4dqXxgvbbhZnC10GFYPIoZjGrIEErLk4Na-GentLqyhqGsVpeQ/exec";
+
+const form = document.getElementById("interestForm");
+const btn = document.getElementById("submitBtn");
+const statusBox = document.getElementById("status");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (SCRIPT_URL.includes("PASTE_YOUR")) {
+    showStatus("Please configure the Google Apps Script URL before publishing this page.", false);
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = "Submitting...";
+
+  const data = {};
+  new FormData(form).forEach((value, key) => data[key] = value);
+
+  try {
+    await fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {"Content-Type":"text/plain;charset=utf-8"},
+      body: JSON.stringify(data)
+    });
+
+    form.reset();
+    showStatus("Thank you! Your interest has been submitted successfully. The Blackbucks team will contact you shortly.", true);
+  } catch (err) {
+    showStatus("Something went wrong while submitting. Please try again.", false);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Submit Interest";
+  }
+});
+
+function showStatus(message, success) {
+  statusBox.textContent = message;
+  statusBox.className = success ? "success" : "error";
+  statusBox.style.display = "block";
+  window.scrollTo({top: document.body.scrollHeight, behavior:"smooth"});
+}
+</script>
+</body>
+</html>
